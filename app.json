@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "meishi nfc tools",
+    "slug": "meishi-nfc-tools",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "meishinfc",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#f2eee4",
+    "primaryColor": "#22304a",
+    "ios": {
+      "bundleIdentifier": "shop.meishi.nfctools",
+      "supportsTablet": false,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "shop.meishi.nfctools",
+      "edgeToEdgeEnabled": true
+    },
+    "plugins": [
+      [
+        "react-native-nfc-manager",
+        {
+          "nfcPermission": "nfc is used to read and write the tag you hold to your phone. nothing is sent anywhere.",
+          "selectIdentifiers": [],
+          "includeNdefEntitlement": true
+        }
+      ]
+    ]
+  }
+}
